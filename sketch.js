@@ -31,7 +31,7 @@ function draw() {
 
   push()
   fill(blue);
-  translate(770, 400);
+  translate(770, 370);
   rotate(frameCount*2);
 
   //ellipse(x, y, frameCount/1.5, frameCount/2);//
