@@ -18,10 +18,6 @@ function draw() {
   green = (lerpColor(color("#1A2227"), color("#679b9b"), frameCount / 720 ));
   white = (lerpColor(color("#1A2227"), color("white"), frameCount / 720 ));
 
-  fill(blue);
-  strokeWeight(0.5);
-stroke("#1A2227")
-
   var x = r * cos(a);
   var y = r * sin(a);
 
@@ -29,61 +25,58 @@ stroke("#1A2227")
   a += 0.1;
   r += 1;
 
+  strokeWeight(0.5);
+  stroke("#1A2227")
+
+
   push()
-  translate(windowWidth/1.7, windowHeight/1.9);
+  fill(blue);
+  translate(770, 400);
   rotate(frameCount*2);
 
   //ellipse(x, y, frameCount/1.5, frameCount/2);//
   ellipse(x, y, frameCount/5, frameCount/4);
 
 
-  if (frameCount == 741){
-noLoop()
-
+  if (frameCount == 750){
+  noLoop()
+  }
 
   //line(x, y, 50, 50);
 
+  pop()
 
 
-  }
+  push()
 
-    pop()
+  translate(285, -15);
+  fill(pink);
+  rotate(frameCount*2);
 
-
-    push()
-
-      translate(70, 30);
-fill(pink);
-
-rotate(frameCount*2);
-
-ellipse(x, y, frameCount/5, frameCount/4);
-
-
+  ellipse(x, y, frameCount/5, frameCount/4);
 
   pop()
 
+
   push()
   fill(green);
-  translate(windowWidth + 20, windowHeight/2);
+  translate(1450, 400);
   rotate(frameCount*2);
 
   //ellipse(x, y, frameCount/1.5, frameCount/2);//
   ellipse(x, y, frameCount/5, frameCount/4);
 
-
-pop()
-
-push()
-fill(white);
-translate(windowWidth/5.4, windowHeight + 151);
-rotate(frameCount*2);
-
-//ellipse(x, y, frameCount/1.5, frameCount/2);//
-ellipse(x, y, frameCount/5, frameCount/4);
+  pop()
 
 
+  push()
 
+  fill(white);
+  translate(275, 860);
+  rotate(frameCount*2);
+
+  //ellipse(x, y, frameCount/1.5, frameCount/2);//
+  ellipse(x, y, frameCount/5, frameCount/4);
 
   pop()
 
