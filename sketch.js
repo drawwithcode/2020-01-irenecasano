@@ -28,31 +28,28 @@ function draw() {
   strokeWeight(0.5);
   stroke("#1A2227")
 
+  //ellipse(x, y, frameCount/1.5, frameCount/2);//
+  //line(x, y, 50, 50);
 
   push()
+
   fill(blue);
   translate(770, 370);
   rotate(frameCount*2);
-
-  //ellipse(x, y, frameCount/1.5, frameCount/2);//
   ellipse(x, y, frameCount/5, frameCount/4);
-
 
   if (frameCount == 750){
   noLoop()
   }
-
-  //line(x, y, 50, 50);
 
   pop()
 
 
   push()
 
-  translate(285, -15);
   fill(pink);
+  translate(285, -15);
   rotate(frameCount*2);
-
   ellipse(x, y, frameCount/5, frameCount/4);
 
   pop()
@@ -62,8 +59,6 @@ function draw() {
   fill(green);
   translate(1450, 400);
   rotate(frameCount*2);
-
-  //ellipse(x, y, frameCount/1.5, frameCount/2);//
   ellipse(x, y, frameCount/5, frameCount/4);
 
   pop()
@@ -74,11 +69,8 @@ function draw() {
   fill(white);
   translate(275, 860);
   rotate(frameCount*2);
-
-  //ellipse(x, y, frameCount/1.5, frameCount/2);//
   ellipse(x, y, frameCount/5, frameCount/4);
 
   pop()
-
 
 }
